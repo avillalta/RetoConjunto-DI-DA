@@ -7,12 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO implements DAO<User>{
-    private Connection connection = null;
+    private static Connection connection = null;
     private static final String INSERT_USER = "INSERT INTO User (user_name, password) VALUES (?, ?);";
     private static final String DELETE_USER = "DELETE FROM User WHERE id = ?;";
     private static final String UPDATE_USER = "UPDATE User SET user_name = ?, password = ? WHERE id = ?;";
 
-    public UserDAO(Connection con){ this.connection = con;}
+    public UserDAO(Connection con){ connection = con;}
 
     @Override
     public List<User> findAll() {
