@@ -1,4 +1,4 @@
-package dao;
+package com.reto.dao;
 
 import lombok.Getter;
 

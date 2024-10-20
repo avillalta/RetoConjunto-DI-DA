@@ -1,7 +1,9 @@
-package model;
+package com.reto.dto;
 
-import enums.Format;
-import enums.Status;
+
+import com.reto.enums.Format;
+import com.reto.enums.Status;
+import com.reto.model.Movie;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,10 +11,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MovieCopy {
-    private Integer copyId;
-    private Integer filmId;
-    private Integer userId;
+public class MovieDTO {
+    private Movie movie;
     private Status status;
     private Format format;
 }

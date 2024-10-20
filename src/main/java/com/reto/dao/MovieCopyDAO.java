@@ -1,8 +1,8 @@
-package dao;
+package com.reto.dao;
 
-import enums.Format;
-import enums.Status;
-import model.MovieCopy;
+import com.reto.enums.Format;
+import com.reto.enums.Status;
+import com.reto.model.MovieCopy;
 
 import java.sql.*;
 import java.util.ArrayList;
